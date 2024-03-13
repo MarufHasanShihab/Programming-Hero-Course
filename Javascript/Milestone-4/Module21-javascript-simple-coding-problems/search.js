@@ -15,3 +15,7 @@ console.log(lyrics.includes(searchString.toLowerCase()));
 
 // indexOf
 console.log(lyrics.indexOf('sada'))
+
+
+// startWith
+console.log(lyrics.startsWith("tumi"))
