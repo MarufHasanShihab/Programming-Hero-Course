@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Tailwind css cdn link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-5xl text-center mt-6">
+        Let's Ger Some
+        <span class="font-bold text-indigo-700">Mooooooooooney!!</span>
+      </h1>
+    </header>
+    <main>
+      <div class="w-[80%] bg-emerald-600 mx-auto mt-6 p-10 rounded-[10px]">
+        <div class="flex justify-between">
+          <div
+            class="w-[30%] text-white text-center bg-orange-500 p-10 rounded-[10px]"
+          >
+            <h2 class="text-4xl">Deposit</h2>
+            <h3 class="text-4xl mt-3">$<span id="deposit-total">00</span></h3>
+          </div>
+          <div
+            class="w-[30%] text-white text-center bg-yellow-500 p-10 rounded-[10px]"
+          >
+            <h2 class="text-4xl">Withdraw</h2>
+            <h3 class="text-4xl mt-3">$<span id="withdraw-amount">00</span></h3>
+          </div>
+          <div
+            class="w-[30%] text-white text-center bg-lime-700 p-10 rounded-[10px]"
+          >
+            <h2 class="text-4xl">Balance</h2>
+            <h3 class="text-4xl mt-3">$<spna id="deposit-Balance">1240</spna></h3>
+          </div>
+        </div>
+        <div class="flex gap-12 mt-16">
+          <div class="w-[40%] bg-fuchsia-600 px-10 py-8 rounded-[10px]">
+            <h2 class="text-3xl mb-5 text-white">Please Deposit</h2>
+            <form id="deposit-form">
+              <input
+                class="w-[100%] p-2 border-none outline-none rounded-[5px] block mb-4"
+                type="number"
+                name=""
+                id="deposit-input-field"
+                placeholder="Enter Your Deposit Amount"
+                required
+              />
+              <input type="submit" value="Deposit" class="py-1 px-3 text-[20px] bg-violet-950 text-white rounded-[5px] hover:bg-yellow-800 block cursor-pointer" ></input>
+            </form>
+          </div>
+
+          <div class="w-[40%]  bg-indigo-600 px-10 py-8 rounded-[10px]">
+            <h2 class="text-3xl mb-5 text-white">Please Withdraw</h2>
+            <form id="withdraw-form">
+              <input
+                class="w-[100%] p-2 border-none outline-none rounded-[5px] block mb-4"
+                type="number"
+                id="withdraw-input-field"
+                placeholder="Enter Your Withdraw Amount"
+                required
+              />
+              <input type="submit" value="Withdraw" class="py-1 px-3 text-[20px] bg-pink-600 text-white rounded-[5px] hover:bg-yellow-800 block cursor-pointer" ></input>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="bank.js"></script>
+  </body>
+</html>
