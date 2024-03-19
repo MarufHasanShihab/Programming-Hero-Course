@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exploring Delegate</h1>
+    <ul id="list-container">
+        <li class="iteam">Lorem, ipsum.</li>
+        <li class="iteam">Reprehenderit, adipisci.</li>
+        <li class="iteam">Rem, provident?</li>
+        <li class="iteam">Accusamus, laborum.</li>
+        <li class="iteam">Facere, aliquid?</li>
+        <li class="iteam">Labore, assumenda.</li>
+    </ul>
+    <button id="add-iteam-btn">Add New Iteam</button>
+    <script>
+        const iteams = document.getElementsByClassName("iteam");
+        // for(let iteam of iteams){
+        //     iteam.addEventListener("click", function(e){
+        //         e.target.parentNode.removeChild(e.target);
+        //     })
+        // }
+
+        document.getElementById("list-container").addEventListener("click", function(e){
+            e.target.parentNode.removeChild(e.target);
+        })
+
+        document.getElementById("add-iteam-btn").addEventListener("click", function(){
+            let li = document.createElement("li");
+            li.innerText = "Brand New Iteam";
+            li.classList.add("iteam")
+            document.getElementById("list-container").appendChild(li);
+        })
+    </script>
+</body>
+</html>

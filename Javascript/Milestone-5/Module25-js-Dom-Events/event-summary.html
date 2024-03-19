@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <p id="p">My Favorite Programming Language Javascript</p>
+    <button onclick="changeText()">Change Text</button>
+    <button id="change-language">Change You Programming Language</button>
+    <br>
+    <h1 id="input-default-text">input default text</h1>
+    <input type="text" name="" id="input-filed"><br>
+    <button style="margin-top: 20px;" id="update-btn">Update Input Text</button>
+
+    <script>
+      function changeText() {
+        const h1 = document.querySelector("h1");
+        h1.innerText = "Hello javascript";
+      }
+
+      document.getElementById("change-language").addEventListener("click", function(){
+        document.getElementById("p").innerText = "My Favorite Programming Language Php"
+      })
+
+      document.getElementById("update-btn").addEventListener("click", function(){
+        const inputFiledText = document.getElementById("input-filed").value;
+        document.getElementById("input-default-text").innerText = inputFiledText;
+      })
+    </script>
+  </body>
+</html>

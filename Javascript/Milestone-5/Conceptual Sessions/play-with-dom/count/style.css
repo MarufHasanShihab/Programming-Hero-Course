@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: pink;
+}
+.count-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 50px;
+}
+h1{
+    font-size: 50px;
+    font-weight: bolder;
+}
+.counter{
+    margin-top: 20px;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+#count-increment-btn{
+    padding: 10px 20px;
+    background: fuchsia;
+    font-size: 25px;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+}
+#count-decriment-btn{
+    padding: 10px 20px;
+    background: forestgreen;
+    font-size: 25px;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+}

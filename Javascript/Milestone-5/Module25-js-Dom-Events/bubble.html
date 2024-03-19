@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble</title>
+    <style>
+        body{
+            border: 2px solid red;
+            padding: 30px;
+        }
+        section{
+            border: 2px solid blue;
+            padding: 30px;
+        }
+        ul{
+            border: 2px solid burlywood;
+            padding: 30px;
+        }
+        #iteam-2{
+            border: 2px solid fuchsia;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exploring Bubble</h1>
+    <section>
+        <ul>
+            <li id="iteam-1">Lorem, ipsum.</li>
+            <li id="iteam-2">Aspernatur, sapiente.</li>
+            <li id="iteam-3">Quis, optio.</li>
+            <li id="iteam-4">Expedita, aliquam!</li>
+        </ul>
+        <script>
+            document.getElementById("iteam-2").addEventListener("click", function(e){
+                console.log("iteam-2 clicked");
+                e.stopPropagation();
+                e.stopImmediatePropagation();
+            })
+            document.getElementById("iteam-2").addEventListener("click", function(){
+                console.log("iteam-2 secound clicked");
+            })
+            document.getElementById("iteam-2").addEventListener("click", function(){
+                console.log("iteam-2 thired clicked");
+            })
+            document.querySelector("ul").addEventListener("click", function(){
+                console.log("ul clicked");
+            })
+            document.querySelector("section").addEventListener("click", function(){
+                console.log("section clicked");
+            })
+            document.querySelector("body").addEventListener("click", function(){
+                console.log("body clicked")
+            })
+        </script>
+    </section>
+</body>
+</html>
