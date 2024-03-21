@@ -9,4 +9,5 @@ function handleCLikBtn(target) {
   selectedTtems.appendChild(li);
   const price = target.parentNode.childNodes[5].innerText.split(" ")[1];
   toTal.innerText = parseFloat(toTal.innerText) + parseFloat(price);
+  setData();
 }
